@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Whossun\\Toastr\\": "src/"
+            "Whossun\\Toastr": "src/"
         }
     },
     "minimum-stability": "dev",
