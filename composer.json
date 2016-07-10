@@ -11,7 +11,10 @@
     "autoload": {
         "psr-4": {
             "Whossun\\Toastr\\": "src/"
-        }
+        },
+        "files": [
+            "src/helper.php"
+        ]
     },
     "minimum-stability": "dev",
     "require": {}
