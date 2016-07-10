@@ -28,7 +28,7 @@ jQuery [toast](https://github.com/CodeSeven/toastr), you need to add css and js 
 
 ### Basic
 
-You should add `{!! Reminder::message() !!}` to your html.
+You should add `{!! Toastr::message() !!}` to your html.
 
 Then.
 
