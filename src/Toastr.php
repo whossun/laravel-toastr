@@ -63,9 +63,7 @@ class Toastr
         }
 
         $script .= '</script>';
-
-
-        return view('Toastr::toastr', compact('script'));
+        return $script;
     }
 
     /**

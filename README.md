@@ -1,4 +1,3 @@
-
 # laravel-toastr
 
 
@@ -28,9 +27,6 @@ jQuery [toast](https://github.com/CodeSeven/toastr), you need to add css and js 
 
 ### Basic
 
-You should add `{!! Toastr::message() !!}` to your html.
-
-Then.
 
 * Toastr::info('message', 'title', ['options']);
 
@@ -48,11 +44,15 @@ Then.
 <?php
 
 Route::get('/', function () {
-    Toastr::success('Hi! this is Toastr', 'Hello', ["positionClass" => "toast-top-center"]);
+    Toastr::success('Messages in here', 'Title', ["positionClass" => "toast-top-center"]);
 
     return view('welcome');
 });
 ```
+
+Then
+
+You should add `{!! Toastr::message() !!}` to your html.
 
 ```html
 <!DOCTYPE html>
@@ -67,7 +67,7 @@ Route::get('/', function () {
                 <div class="title">Laravel 5</div>
             </div>
         </div>
-
+        <script type="text/javascript" src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js></script>
         {!! Toastr::message() !!}
     </body>
 </html>
