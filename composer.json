@@ -1,6 +1,8 @@
 {
     "name": "whossun/laravel-toastr",
     "description": "toastr.js for laravel 5.2",
+    "keywords": ["toastr", "notification", "laravel", "php"],
+    "homepage": "https://github.com/whossun/laravel-toastr",
     "license": "MIT",
     "authors": [
         {
@@ -17,5 +19,9 @@
         ]
     },
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+    "php": ">=5.5.0",
+        "illuminate/support": ">=5.2.7",
+        "illuminate/session": ">=5.2.7"
+    }
 }
