@@ -17,8 +17,20 @@ Whossun\Toastr\ToastrServiceProvider::class,
 Optionally include the Facade in config/app.php if you'd like.
 
 ```php
-'Toastr'  => Whossun\Toastr\ToastrFacade::class,
+'Toastr'  => Whossun\Toastr\Facades\Toastr::class,
 ```
+
+
+### Options
+
+You can set custom options for Reminder. Run:
+
+    php artisan vendor:publish
+
+to publish the config file for toastr.
+
+You can see [toastr's documentation](http://codeseven.github.io/toastr/demo.html) to custom your need.
+
 
 > You can use toastr() function available.
 
@@ -74,14 +86,5 @@ Route::get('/', function () {
 ```
 
 
-### Options
-
-You can set custom options for Reminder. Run:
-
-    php artisan vendor:publish
-
-to publish the config file for toastr.
-
-You can see [toastr's documentation](http://codeseven.github.io/toastr/demo.html) to custom your need.
 
 ### MIT
