@@ -36,7 +36,7 @@ class Toastr
     public function message()
     {
         $messages = $this->session->get('toastr::messages');
-        $this->session->flush('toastr::messages');
+        $this->session->forget('toastr::messages');
 
         if (! $messages) $messages = [];
 
